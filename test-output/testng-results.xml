@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="334777" started-at="2020-07-21T00:46:29 EET" finished-at="2020-07-21T00:52:04 EET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="334777" started-at="2020-07-21T00:46:29 EET" finished-at="2020-07-21T00:52:04 EET">
+      <class name="Deepdiv.Selenium.Testclass">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:Deepdiv.Selenium.Testclass@5d76b067]" name="Setup" is-config="true" duration-ms="10808" started-at="2020-07-21T00:46:29 EET" finished-at="2020-07-21T00:46:40 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="Vodafone(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Deepdiv.Selenium.Testclass@5d76b067]" name="Vodafone" duration-ms="79238" started-at="2020-07-21T00:46:44 EET" data-provider="userdata" finished-at="2020-07-21T00:48:03 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wessam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gamal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[wessam.gamal@vodafone.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[wessam.gamal@vodafone.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[alm-test.vodafone.com.csr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Vodafone -->
+        <test-method status="PASS" signature="Vodafone(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Deepdiv.Selenium.Testclass@5d76b067]" name="Vodafone" duration-ms="61220" started-at="2020-07-21T00:48:03 EET" data-provider="userdata" finished-at="2020-07-21T00:49:04 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amr ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[raafat]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[amr.raafat@vodafone.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[amr.raafat@vodafone.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[mychamps.vodafone.de.csr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Vodafone -->
+        <test-method status="PASS" signature="Vodafone(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Deepdiv.Selenium.Testclass@5d76b067]" name="Vodafone" duration-ms="59672" started-at="2020-07-21T00:49:04 EET" data-provider="userdata" finished-at="2020-07-21T00:50:04 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amr ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rashad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[amr.rashad@vodafone.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[amr.rashad@vodafone.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[mychampsint.vodafone.de.csr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Vodafone -->
+        <test-method status="PASS" signature="Vodafone(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Deepdiv.Selenium.Testclass@5d76b067]" name="Vodafone" duration-ms="58995" started-at="2020-07-21T00:50:04 EET" data-provider="userdata" finished-at="2020-07-21T00:51:03 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Doaa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Doaa.amer@vodafone.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doaa.amer@vodafone.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[myttwos.vodafone.de.csr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Vodafone -->
+        <test-method status="PASS" signature="Vodafone(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Deepdiv.Selenium.Testclass@5d76b067]" name="Vodafone" duration-ms="59446" started-at="2020-07-21T00:51:03 EET" data-provider="userdata" finished-at="2020-07-21T00:52:03 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mahmoud]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[anwar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mahmoud.anwar@vodafone.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mahmoud.anwar@vodafone.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[myttwosint.vodafone.de.csr]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Vodafone -->
+        <test-method status="PASS" signature="EndTest()[pri:0, instance:Deepdiv.Selenium.Testclass@5d76b067]" name="EndTest" is-config="true" duration-ms="1561" started-at="2020-07-21T00:52:03 EET" finished-at="2020-07-21T00:52:04 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndTest -->
+      </class> <!-- Deepdiv.Selenium.Testclass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

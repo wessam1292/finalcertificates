@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.awt.*;
@@ -16,45 +15,28 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 
-public class Publiccert {
+
+public class demo {
+    WebDriver driver;
+    public int trials = 0;
 
 
 
-        WebDriver driver;
-        public int trials = 0;
-        //public String filepath = System.getProperty("user.dir")+"//Upload//Certdata.xlsx";
-        @DataProvider(name = "files")
-        public Object[][] testingdata(){
-            return new Object[][] {{"alm-test.vodafone.com.csr"},{"mychamps.vodafone.de.csr"},{"mychampsint.vodafone.de.csr"},{"myttwos.vodafone.de.csr"}};
-        }
+    @BeforeClass
+    public void Setup() {
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//privateupload//chromedriver.exe");
 
-        // @DataProvider(name = "userdata")
-        // public Object[][] UserData() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(140, TimeUnit.SECONDS);}
 
-        //  return ExcelReader.loadTestData(filepath, "Sheet1");
-        //  }
+        @Test
 
-
-
-        @BeforeClass
-        public void Setup() {
-            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//privateupload//chromedriver.exe");
-
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(140, TimeUnit.SECONDS);
-
-
-        }
-
-        @Test(dataProvider = "files")
-        public void Vodafone(String filename) throws InterruptedException, AWTException {
+public void demo() throws InterruptedException, AWTException {
             driver.navigate().to("https://www.digicert.com/secure/requests/ssl_certificate/ssl_plus?guest_key=vjtxx9p1z5m9nvh0");
             driver.findElement(By.name("guest_requester_first_name")).sendKeys("wessam");
             driver.findElement(By.name("guest_requester_last_name")).sendKeys("gamal");
             driver.findElement(By.name("guest_requester_email")).sendKeys("wessam.gamal1@vodafone.com");
-
-
 
             //handling cookie
 
@@ -67,13 +49,12 @@ public class Publiccert {
 
             trials++;
             // handling CSR upload
-            //String csrname = "alm-test.vodafone.com.csr";
-            String csrpath = System.getProperty("user.dir")+"\\Upload\\"+filename;
+            String csrname = "alm-test.vodafone.com.csr";
+           String csrpath = System.getProperty("user.dir")+"\\Upload\\"+csrname;
             WebElement Uploadcsr = driver.findElement(By.id("upload-csr-button"));
             Uploadcsr.click();
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript("arguments[0].scrollIntoView();", Uploadcsr);
-
 
             // code using Robotclass for file upload
             Robot robot = new Robot();
@@ -97,7 +78,7 @@ public class Publiccert {
             Thread.sleep(3000);
 
             // ctrl + c csrname
-            StringSelection selection2 = new StringSelection(filename);
+            StringSelection selection2 = new StringSelection(csrpath);
             Clipboard clipboard2 = Toolkit.getDefaultToolkit().getSystemClipboard();
             clipboard.setContents(selection, null);
             robot.keyPress(KeyEvent.VK_ENTER);
@@ -109,6 +90,7 @@ public class Publiccert {
             robot.keyPress(KeyEvent.VK_V);
             robot.keyRelease(KeyEvent.VK_V);
             robot.keyRelease(KeyEvent.VK_CONTROL);
+
             robot.delay(2000);
             robot.keyPress(KeyEvent.VK_ENTER);
             robot.keyRelease(KeyEvent.VK_ENTER);
@@ -134,9 +116,6 @@ public class Publiccert {
             driver.findElement(By.xpath("//*[@id=\"request-form\"]/div[4]/div/div/div[7]/textarea")).sendKeys("certificate renewal");
             driver.findElement(By.xpath("//*[@id=\"request-form\"]/div[4]/div/div/div[8]/textarea")).sendKeys("Dev");
 
-
-
-
             WebElement DL = driver.findElement(By.xpath("//*[@id=\"request-form\"]/div[4]/div/div/div[9]/ul/li/input"));
 
             js.executeScript("arguments[0].scrollIntoView();", DL);
@@ -149,7 +128,7 @@ public class Publiccert {
 
             // To get order number
             driver.getTitle();
-            Thread.sleep(10000);
+            Thread.sleep(20000);
             String str = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[2]/div/div[1]/div/div[1]/div/div")).getText();
             System.out.println(str);
 
@@ -157,20 +136,12 @@ public class Publiccert {
         }
 
 
-        @AfterClass
-        public void EndTest() {
+    //@AfterClass
+    public void EndTest() {
 
-            driver.quit();
+        driver.quit();
 
         }
-
-//
-//
-//
-//
-//
-
-
-    }
+}
 
 

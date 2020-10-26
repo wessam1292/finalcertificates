@@ -31,7 +31,7 @@ public class Testprivate {
 
     @BeforeClass
     public void start () throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//Upload//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//privateupload//chromedriver.exe");
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();

@@ -21,7 +21,7 @@ public class Testclass {
 
 	WebDriver driver;
 	 public int trials = 0;
-	 public String filepath = System.getProperty("user.dir")+"//Upload//Certdata.xlsx";
+	 public String filepath = System.getProperty("user.dir")+"//privateupload//Certdata.xlsx";
 	//@DataProvider (name = "files")
 	// public Object[][] testingdata(){
 	//return new Object[][] {{"alm-test.vodafone.com.csr"}, {"mychamps.vodafone.de.csr"},{"mychampsint.vodafone.de.csr"},{"myttwos.vodafone.de.csr"},{"myttwosint.vodafone.de.csr"}};
@@ -66,7 +66,7 @@ public class Testclass {
  		trials++;
  		 // handling CSR upload 
  		//String csrname = "alm-test.vodafone.com.csr";
- 		String csrpath = System.getProperty("user.dir")+"\\Upload\\"+filename;
+ 		String csrpath = System.getProperty("user.dir")+"\\privateupload\\"+filename;
  		WebElement Uploadcsr = driver.findElement(By.id("upload-csr-button"));
 		 Uploadcsr.click();
      	JavascriptExecutor js = (JavascriptExecutor) driver;

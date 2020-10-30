@@ -29,6 +29,7 @@
 			</suiteXmlFiles>
 		</configuration>
 	</plugin>
+		
         </plugins>
     </build>
     <packaging>jar</packaging>

@@ -25,7 +25,7 @@
 			<!-- Suite testng xml file to consider for test execution -->
 			<suiteXmlFiles>
 				<suiteXmlFile>regression.xml</suiteXmlFile>
-				<suiteXmlFile>suites-test-regression.xml</suiteXmlFile>
+				
 			</suiteXmlFiles>
 		</configuration>
 	</plugin>

@@ -3,7 +3,7 @@
     <test name="ToolsQA" >
         <classes>
 		
-            <class name="Deepdiv.Selenium.demo" />
+            <class name="Deepdiv.Selenium.Testclass" />
 
         </classes>
     </test>

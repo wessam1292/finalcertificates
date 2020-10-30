@@ -21,7 +21,7 @@ public class Testclass {
 
 	WebDriver driver;
 	 public int trials = 0;
-	 public String filepath = System.getProperty("user.dir")+"//privateupload//Certdata.xlsx";
+	 public String filepath = System.getProperty("user.dir")+"//privateUpload//Certdatanew.xlsx";
 	//@DataProvider (name = "files")
 	// public Object[][] testingdata(){
 	//return new Object[][] {{"alm-test.vodafone.com.csr"}, {"mychamps.vodafone.de.csr"},{"mychampsint.vodafone.de.csr"},{"myttwos.vodafone.de.csr"},{"myttwosint.vodafone.de.csr"}};
